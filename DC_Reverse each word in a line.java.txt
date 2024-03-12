@@ -1,0 +1,14 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+	    String str = sc.nextLine();
+	    String []sarr = str.split(" ");
+	    StringBuilder [] sb = new StringBuilder[sarr.length];
+	    Arrays.setAll(sb,i -> new StringBuilder(sarr[i]));
+	    for(StringBuilder sbs:sb) {
+	        System.out.print(sbs.reverse().toString()+" ");
+	    }
+	}
+}
